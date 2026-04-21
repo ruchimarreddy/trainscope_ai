@@ -2,11 +2,11 @@
 
 TrainScope is an AI-assisted experiment diagnostics tool for understanding **training dynamics, stability, overfitting, and run quality** across machine learning experiments.
 
-I wanted to build something more useful than a simple dashboard that only plots loss curves. In research and model development, we often end up with many runs, many metrics, and a lot of trial-and-error. TrainScope is meant to act like a lightweight experiment intelligence system: it compares runs, flags instability, surfaces likely overfitting, and produces quick natural-language summaries that make training behavior easier to interpret.
+I wanted to build something more useful than a simple dashboard that only plots loss curves. In research and model development, we often end up with many runs, many metrics, and a lot of trial-and-error. TrainScope is meant to act like a lightweight experiment intelligence system which compares runs, flags instability, surfaces likely overfitting, and produces quick natural-language summaries that make training behavior easier to interpret.
 
 ## What makes it AI-powered
 
-TrainScope now includes a lightweight **AI analyst layer**:
+TrainScope includes a lightweight **AI analyst layer**:
 - a retrieval stage that builds a knowledge base from run diagnostics and metric observations
 - an evidence-ranking stage using TF-IDF similarity
 - an optional **local LLM** (`google/flan-t5-small` through Hugging Face Transformers) to generate grounded answers
